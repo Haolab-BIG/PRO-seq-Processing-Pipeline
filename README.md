@@ -4,7 +4,7 @@ The PRO-seq analysis pipeline processes raw FASTQ data through a series of steps
 
 ## Workflow Diagram
 
-![](D:\RLK_database\project\数据来源\毕业\博士后\杂事\EasyOmics\pipeline\Workflow_Diagram\PRO-seq_pipeline.png)
+![](https://github.com/Haolab-BIG/PRO-seq-Processing-Pipeline/raw/main/picture/PRO-seq_pipeline.png)
 
 ## Requirements
 
@@ -201,7 +201,7 @@ snakemake -s PRO-seq.smk \
 dot -Tsvg > dag.svg
 ```
 
-![](D:\RLK_database\project\数据来源\毕业\博士后\杂事\EasyOmics\PRO_seq\picture\dag.png)
+![](https://github.com/Haolab-BIG/PRO-seq-Processing-Pipeline/raw/main/picture/dag.png)
 ### 4. Check the current working directory
 
 The initial working structure for snakemake in /mnt/liuq/test/singularity/:
@@ -402,7 +402,7 @@ After the pipeline completes, the output directory will contain several files an
   
        - **General Statistics**: A combined table summarizing important metrics for each sample:
        
-       ![](D:\RLK_database\project\数据来源\毕业\博士后\杂事\EasyOmics\PRO_seq\picture\general_statistic.png)
+       ![](https://github.com/Haolab-BIG/PRO-seq-Processing-Pipeline/raw/main/picture/general_statistic.png)
        - **FastQC**: Quality-control metrics on raw and trimmed reads, including  
         'Sequence Counts', 'Sequence Quality Histograms', 'Per Sequence Quality Scores',  
            'Per Base Sequence Content', 'Per Sequence GC Content', 'Per Base N Content',  
@@ -412,11 +412,11 @@ After the pipeline completes, the output directory will contain several files an
        - **Sequence Quality Histograms**: The mean quality value across each base position in the read. 
        
        
-       ![](D:\RLK_database\project\数据来源\毕业\博士后\杂事\EasyOmics\PRO_seq\picture\fastqc_per_base_sequence_quality_plot.png)
+       ![](https://github.com/Haolab-BIG/PRO-seq-Processing-Pipeline/raw/main/picture/fastqc_per_base_sequence_quality_plot.png)
            
       - **Adapter Content**: The cumulative percentage count of the proportion of your library which has seen each of the adapter sequences at each position.  
       
-       ![](D:\RLK_database\project\数据来源\毕业\博士后\杂事\EasyOmics\PRO_seq\picture\fastqc_per_sequence_quality_scores_plot.png)
+       ![](https://github.com/Haolab-BIG/PRO-seq-Processing-Pipeline/raw/main/picture/fastqc_per_sequence_quality_scores_plot.png)
       
   
 - **`fastqc.html(zip)`**
@@ -430,14 +430,14 @@ After the pipeline completes, the output directory will contain several files an
 
   - **Application**: Primarily used for visualization. You can load this file into a genome browser (e.g., IGV, UCSC Genome Browser) to see a "signal track" that shows gene expression levels visually across chromosomes. Highly expressed genes will appear as peaks.
 
-       ![](D:\RLK_database\project\数据来源\毕业\博士后\杂事\EasyOmics\PRO_seq\picture\UCSC_bw.png)
+       ![](https://github.com/Haolab-BIG/PRO-seq-Processing-Pipeline/raw/main/picture/UCSC_bw.png)
   
 - **`mRNA_contamination.pdf(png)`**
   - **Content**: For Assessment of nascent RNA purity,calculates the exon to intron read density ratio. And PRO-seq libraries have an increased promoter emphasis and higher mRNA contamination indicated by an increase in reads in promoters and exons at the cost of reads in introns and promoter flanking regions ..
 
   - **Application**: It is used to check the contamination of mRNA, the peak value is required to be less than 2.
   
-       ![](D:\RLK_database\project\数据来源\毕业\博士后\杂事\EasyOmics\PRO_seq\picture\SRR8608074_mRNA_contamination.png)
+       ![](https://github.com/Haolab-BIG/PRO-seq-Processing-Pipeline/raw/main/picture/SRR8608074_mRNA_contamination.png)
 
 
 - **`pause_index.pdf(png)`**
@@ -445,7 +445,7 @@ After the pipeline completes, the output directory will contain several files an
   
   - **Application**: It is used to check the transcription pause, the peak value is required to be more than 10.
     
-       ![](D:\RLK_database\project\数据来源\毕业\博士后\杂事\EasyOmics\PRO_seq\picture\SRR8608074_pause_index.png)
+       ![](https://github.com/Haolab-BIG/PRO-seq-Processing-Pipeline/raw/main/picture/SRR8608074_pause_index.png)
   
 - **`TSSenrichment.pdf(png)`**
   
@@ -453,7 +453,7 @@ After the pipeline completes, the output directory will contain several files an
   
   - **Application**:  It is used to check the TSS enrichment,requires the negative strand to precede the positive strand.
   
-    ![](D:\RLK_database\project\数据来源\毕业\博士后\杂事\EasyOmics\PRO_seq\picture\SRR8608074_TSSenrichment.png)
+    ![](https://github.com/Haolab-BIG/PRO-seq-Processing-Pipeline/raw/main/picture/SRR8608074_TSSenrichment.png)
   
   
   
@@ -487,5 +487,5 @@ Here, the alignment rate is 96.93% and the unique alignment rate is 62.86%.
 Watch this video tutorial to see a complete walk through of running the pipeline:
 
 <video width="1920" height="1080" controls>
-  <source src="snakemake.mp4" type="video/mp4">
+  <source src="https://github.com/Haolab-BIG/PRO-seq-Processing-Pipeline/raw/main/snakemake.mp4" type="video/mp4">
 </video>
