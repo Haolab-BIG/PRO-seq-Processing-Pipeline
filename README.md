@@ -486,6 +486,4 @@ Here, the alignment rate is 96.93% and the unique alignment rate is 62.86%.
 
 Watch this video tutorial to see a complete walk through of running the pipeline:
 
-<video width="1920" height="1080" controls>
-  <source src="https://github.com/Haolab-BIG/PRO-seq-Processing-Pipeline/raw/main/snakemake.mp4" type="video/mp4">
-</video>
+https://github.com/Haolab-BIG/PRO-seq-Processing-Pipeline/raw/main/snakemake.mp4
