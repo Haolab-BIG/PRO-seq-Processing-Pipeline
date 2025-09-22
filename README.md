@@ -139,13 +139,13 @@ singularity exec proseq.sif samtools faidx GRCh38.primary_assembly.genome.fa \
 
 ```bash
 # Build the main Genome Index
-mkdir -p star_genome_index
+mkdir -p GRCh38.primary_assembly.genome.bowtie2_index
 singularity exec proseq.sif bowtie2-build --threads 16 \
 	GRCh38.primary_assembly.genome.fa \
 	GRCh38.primary_assembly.genome.bowtie2_index/GRCh38.primary_assembly.genome
 
 # Build the rRNA Index
-mkdir -p star_rrna_index
+mkdir -p GRCh38.primary_assembly.rDNA.bowtie2_index
 singularity exec proseq.sif bowtie2-build --threads 16 \
 	GRCh38.primary_assembly.rDNA.fa \
 	GRCh38.primary_assembly.rDNA.bowtie2_index/GRCh38.primary_assembly.rDNA
