@@ -353,7 +353,7 @@ snakemake -s PRO-seq.smk \
 
 **edit `config.yaml`**
 
-- `samples`: Path to the FASTQ file. For paired-end or single-end data, it includes samples from different groups (required)
+- `samples`: Path to the FASTQ file. For paired-end or single-end data (required)
 - `BOWTIE2_RDNAIDX`: Path to the directory where bowtie2 reference build with prefix (required)
 - `BOWTIE2IDX`: Path to the directory where bowtie2 rDNA reference build with prefix (required)
 - `container`: Path to the singularity environment file (required)
